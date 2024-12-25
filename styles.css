@@ -1,99 +1,76 @@
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #007BFF, #6610f2);
-            margin: 0;
-            padding: 0;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            background: #ffffff;
-            color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #007BFF;
-        }
-
-        .devices {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .device {
-            text-align: center;
-            padding: 10px;
-            background: #f4f4f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .device img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-        }
-
-        .device span {
-            display: block;
-            margin: 8px 0;
-        }
-
-        .device .count {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #007BFF;
-        }
-
-        .device button {
-            padding: 8px 15px;
-            font-size: 14px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
-            background-color: #007BFF;
-            color: #fff;
-            transition: background-color 0.3s ease;
-        }
-
-        .device button:hover {
-            background-color: #0056b3;
-        }
-
-        .calculate {
-            display: block;
-            width: 100%;
-            background-color: #28a745;
-            color: white;
-            font-size: 18px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-
-        .calculate:hover {
-            background-color: #218838;
-        }
-
-        .result {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 1.2em;
-            background: #e9ecef;
-            padding: 15px;
-            border-radius: 8px;
-            color: #333;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.devices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.device {
+    text-align: center;
+    margin: 10px;
+}
+.device img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.device span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.device .count {
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 5px;
+}
+.device button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+}
+.device button:hover {
+    background-color: #d32f2f;
+}
+button.calculate {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+button.calculate:hover {
+    background-color: #0056b3;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
