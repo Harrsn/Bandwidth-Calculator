@@ -29,13 +29,11 @@ function updateCount(type) {
 }
 
 function calculateBandwidth() {
-    const totalBandwidth = 
-        (deviceCounts.streaming * bandwidthPerDevice.streaming) +
-        (deviceCounts.gaming * bandwidthPerDevice.gaming) +
-        (deviceCounts.browsing * bandwidthPerDevice.browsing) +
-        (deviceCounts.other * bandwidthPerDevice.other);
+    const totalBandwidth = Object.keys(deviceCounts).reduce((total, type) => {
+        return total + deviceCounts[type] * bandwidthPerDevice[type];
+    }, 0);
 
-    let recommendedPlan = '';
+    let recommendedPlan;
     if (totalBandwidth <= 500) {
         recommendedPlan = '500 Mbps Plan';
     } else if (totalBandwidth <= 1000) {
