@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandwidth Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Bandwidth Calculator</h1>
-        <p>Select the number of devices you use:</p>
+        <p>Adjust the number of devices you use in each category:</p>
+
         <div class="devices">
             <div class="device">
                 <img src="https://via.placeholder.com/80?text=TV" alt="Streaming">
@@ -40,7 +41,8 @@
                 <button onclick="removeDevice('other')">Remove</button>
             </div>
         </div>
-        <button class="calculate" onclick="calculateBandwidth()">Calculate</button>
+
+        <button class="calculate" onclick="calculateBandwidth()">Calculate Bandwidth</button>
         <div class="result" id="result"></div>
     </div>
     <script src="script.js"></script>
