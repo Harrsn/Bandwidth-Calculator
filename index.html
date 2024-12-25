@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandwidth Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bandwidth Calculator</h1>
+        <p>Select the number of devices you use:</p>
+        <div class="devices">
+            <div class="device">
+                <img src="https://via.placeholder.com/80?text=TV" alt="Streaming">
+                <span>Streaming</span>
+                <span class="count" id="streaming-count">0</span>
+                <button onclick="addDevice('streaming')">Add</button>
+                <button onclick="removeDevice('streaming')">Remove</button>
+            </div>
+            <div class="device">
+                <img src="https://via.placeholder.com/80?text=Console" alt="Gaming">
+                <span>Gaming</span>
+                <span class="count" id="gaming-count">0</span>
+                <button onclick="addDevice('gaming')">Add</button>
+                <button onclick="removeDevice('gaming')">Remove</button>
+            </div>
+            <div class="device">
+                <img src="https://via.placeholder.com/80?text=Phone" alt="Browsing">
+                <span>Browsing</span>
+                <span class="count" id="browsing-count">0</span>
+                <button onclick="addDevice('browsing')">Add</button>
+                <button onclick="removeDevice('browsing')">Remove</button>
+            </div>
+            <div class="device">
+                <img src="https://via.placeholder.com/80?text=IoT" alt="Other">
+                <span>Other</span>
+                <span class="count" id="other-count">0</span>
+                <button onclick="addDevice('other')">Add</button>
+                <button onclick="removeDevice('other')">Remove</button>
+            </div>
+        </div>
+        <button class="calculate" onclick="calculateBandwidth()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
