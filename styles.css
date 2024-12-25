@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    }
+}
 
 .container {
     max-width: 700px;
@@ -14,20 +14,20 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
+}
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #007BFF;
-    }
+}
 
 .devices {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     margin: 20px 0;
-    }
+}
 
 .device {
     text-align: center;
@@ -35,24 +35,24 @@ h1 {
     background: #f4f4f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+}
 
 .device img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    }
+}
 
 .device span {
     display: block;
     margin: 8px 0;
-    }
+}
 
 .device .count {
     font-size: 1.2em;
     font-weight: bold;
     color: #007BFF;
-    }
+}
 
 .device button {
     padding: 8px 15px;
@@ -64,11 +64,11 @@ h1 {
     background-color: #007BFF;
     color: #fff;
     transition: background-color 0.3s ease;
-    }
+}
 
 .device button:hover {
     background-color: #0056b3;
-    }
+}
 
 .calculate {
     display: block;
@@ -82,11 +82,11 @@ h1 {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-    }
+}
 
 .calculate:hover {
     background-color: #218838;
-    }
+}
 
 .result {
     text-align: center;
@@ -96,4 +96,4 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     color: #333;
-    }
+}
